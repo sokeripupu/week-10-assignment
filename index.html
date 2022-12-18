@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Animals You Petted</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <br>
+    <div class="card">
+<div class="card-body">
+    <div class="row">
+        <div class="col-sm">
+            <div class="form-group">
+                <label for="pet-date">Date Petted</label>
+                <input type="date" class="form-control" id="pet-date">
+            </div>
+        </div>
+     
+    </div>
+    <div class="row">
+        <div class="col-sm">
+               <div class="form-group">
+                <label for="animal-name">Animal Name</label>
+                <input type="text" class="form-control" id="animal-name" placeholder="Name">
+            </div>
+              <div class="col-sm">
+               <div class="form-group">
+                <label for="animal-type">Animal Type</label>
+                <select class="form-control" id="animal-type" name="animal-type">
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="bird">Bird</option>
+                    <option value="lizard">Lizard</option>
+                    <option value="other">Other</option></select>
+                    <!-- this was an unsuccessful attempt to make choosing "other" pop up a text field: <div id="div1"></div> -->
+            </div>
+                     <div class="col-sm">
+                        <div class ="form-group">
+                             <label for="how-did-it-go">How did the petting go?</label>
+            <textarea
+              class="form-control"
+              aria-label="With textarea"
+              id="how-did-it-go"
+            ></textarea></div>
+    
+               </div>
+               
+    </div>
+    <br>
+    <div>
+        <button id="add" type="button" class="btn btn-primary">Create</button>
+    </div>
+    
+</div>
+    </div>
+    
+    <table id="petted-list" class="table table-info table-striped">
+        <tr>
+            <th>Animal Name</th>
+            <th>Animal Type</th>
+            <th>Date Petted</th>
+            <th>How It Went</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    
+    <script src="tableform.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
