@@ -1,0 +1,15 @@
+{
+  "name": "week-10-coding-assignment",
+  "version": "1.0.0",
+  "description": "•\tUsing HTML, Bootstrap, and JavaScript create a single page website that contains the following:\r •\tA Bootstrap styled table representing your choice of data.\r •\tA Bootstrap styled form that allows a user to add a new row to the table when clicking on submit.",
+  "main": "tableform.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.2"
+  }
+}
